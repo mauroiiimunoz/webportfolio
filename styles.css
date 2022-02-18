@@ -1,0 +1,160 @@
+.ContactMeIcon {
+	width: 10%;
+}
+.ContactMeIconfooter {
+	width: 20px;
+}
+h1{
+	font-family: 'Lato', sans-serif;
+
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+	border: 3px ;
+	border-style: none none dotted;
+}
+
+.card-img-top {
+	width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.btn-info{
+	background-color: #2D817F !important;
+}
+.mau {
+	width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.map {
+	width: 200px;
+	height: auto;
+}
+
+.tradingbot {
+	width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.jumbotron {
+	background-image: url(./images/BackgroundImage.jpg);
+	background-size: cover;
+}
+
+.navbar {
+	background-color: #2D817F !important ;
+}
+
+.dropdown-menu {
+	background-color: #2D817F;
+}
+.jumbotron {
+	background-color: #E2E2EB;
+	height: auto;
+}
+
+body {
+	background-color: #E2E2EB ;
+}
+
+.card {
+	background-color: #E2E2EB ;
+}
+.history {
+	min-height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #E2E2EB;
+	color: black;
+	padding: 10px;
+	border-radius: 5%;
+}
+
+.timeline	{
+	width: 80%;
+	height: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.timeline ul {
+	list-style: none;
+
+}
+.timeline ul li {
+	padding: 10px;
+	background-color: #2D817F;
+	color: white;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+	margin-bottom: 0;
+}
+
+.timelinecontent  {
+	margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+	.timeline::before {
+		content: '';
+	 	position: absolute;
+	 	height: 100%;
+	 	width: 2px;
+	 	left: 53%;
+	 	transform: translateX(-54%);
+	 	background-color: gray;
+/*	 	display: inline-flex;
+	 	justify-content: center !important;
+*/
+	}
+	.timeline ul li {
+		width: 50%;
+		margin-bottom: 50px;
+		position: relative;
+	}
+	.timeline ul li:nth-child(odd) {
+		float: left;
+		clear: right;
+		transform: translateX(-10px);
+	}
+	.timeline ul li:nth-child(even) {
+		float: right;
+		clear: left;
+		transform: translateX(10px);
+	}
+
+	.timeline ul li:after {
+		content: '';
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		background-color: #E9DAC1;
+		border-radius: 50%;
+		border: solid;
+		top: 0;
+	}
+
+	.timeline ul li:nth-child(odd):after {
+		transform: translate(50%,-50%);
+		right: -10px;
+	}
+	.timeline ul li:nth-child(even):after {
+		transform: translate(-50%,-50%);
+		left: -10px;
+	}
+	.timeline ul li:hover:after {
+		background-color: teal;
+	}
+}
